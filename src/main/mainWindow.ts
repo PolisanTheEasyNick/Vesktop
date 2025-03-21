@@ -31,7 +31,6 @@ import {
     DATA_DIR,
     DEFAULT_HEIGHT,
     DEFAULT_WIDTH,
-    isLinux,
     MessageBoxChoice,
     MIN_HEIGHT,
     MIN_WIDTH,
@@ -537,5 +536,5 @@ export async function createWindows() {
     });
 
     initArRPC();
-    if (isLinux) initKeybinds();
+    initKeybinds();
 }
